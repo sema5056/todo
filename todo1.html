@@ -16,7 +16,7 @@
     .container{
       background:white;
       padding:30px;
-      border-redius:20px;
+      border-radius:20px;
       width:400px;
       box-shadow:0 10px 30px rgba(0,0,0,0.2);
     }
@@ -43,12 +43,14 @@
       color:white;
       cursor:pointer;
       transition:0.3s;
+      display:flex;
+      justify-content:space-between;
     }
     button:hover{
       background:#483d8b;
     }
     .filters{
-      margin-yop:15px;
+      margin-top:15px;
       display:flex;
       justify-content:space-between;
     }
@@ -109,9 +111,11 @@
   <ul id="taskList"></ul>
   <div class="bottom">
     <button onclick="clearDone()">Clear done</button>
+    <button onclick="clearAll()">Clear all</button>
+    <button onclick="undo()">Undo</button>
     <p id="counter">Active tasks: 0</p>
   </div>
 </div>
-<script src="script.js"></script>
+<script src="todo1.js"></script>
 </body>
 </html>
